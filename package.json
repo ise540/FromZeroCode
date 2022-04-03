@@ -1,4 +1,5 @@
 {
+  "homepage": "http://yuribenjamin.github.io/my-app",
   "name": "live-coding",
   "version": "1.0.0",
   "description": "",
@@ -8,7 +9,9 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint:check": "eslint ./src",
-    "eslint:fix": "eslint ./src --fix"
+    "eslint:fix": "eslint ./src --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "ise540",
   "license": "ISC",
@@ -21,6 +24,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "*",
     "style-loader": "*",
     "webpack": "^5.71.0",
