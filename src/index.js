@@ -12,8 +12,6 @@ const monacoEditor = monaco.editor.create(container, {
   theme: 'vs-dark'
 });
 
-monaco.editor.colorizeElement(container);
-
 const model = monacoEditor.getModel();
 
 langSelector.addEventListener('change', () => {
